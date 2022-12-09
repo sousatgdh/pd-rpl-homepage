@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
@@ -43,14 +44,12 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Initiatives
-                </a>
+                <Link href="/initiatives">Initiatives</Link>
               </li>
             </ul>
           </div>

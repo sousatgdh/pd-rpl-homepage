@@ -9,6 +9,7 @@ const withMDX = require("@next/mdx")({
 });
 
 const configs = withMDX({
+  basePath: "/pd-rpl-homepage",
   reactStrictMode: true,
   swcMinify: true,
   images: {

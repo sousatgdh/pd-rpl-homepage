@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand" href="#">
-            RPL Guild
+            RPL Platform Guild
           </a>
           <button
             className="navbar-toggler"
@@ -49,7 +49,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/initiatives">Initiatives</Link>
+                <Link className="nav-link" href="/initiatives">
+                  Initiatives
+                </Link>
               </li>
             </ul>
           </div>

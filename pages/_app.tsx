@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             RPL Platform Guild
           </a>
           <button
@@ -45,13 +45,28 @@ export default function App({ Component, pageProps }: AppProps) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" href="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/initiatives">
                   Initiatives
                 </Link>
+              </li>
+
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Learnings
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a className="dropdown-item" href="/learnings/2022">
+                      2022
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
